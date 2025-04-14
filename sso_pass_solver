@@ -219,11 +219,7 @@ def sweep_altitudes():
         print("❌ No valid altitude found with visible passes.")
         return None, 0  # Optional: handles case where nothing was found
 
-
-
-
-        
-
+-----------------------------------------------------------------------------------------------
 # Optimizing KOMPSAT-Style SSO: Best M0 for Max Pass Duration, Visibility, and Revisit Count
 
 if __name__ == "__main__":
@@ -294,10 +290,7 @@ if __name__ == "__main__":
     find_passes(a, e, inc, RAAN, AOP, best_by_max_pass["M0"], plot=True)
     find_passes(a, e, inc, RAAN, AOP, best_by_total_vis["M0"], plot=True)
 
-
-
-
-
+------------------------------------------------------------------------------
 import os
 
 # Check current working directory
@@ -306,15 +299,11 @@ print("📂 Current directory:", os.getcwd())
 # List all files in the current directory
 print("📄 Files:", os.listdir())
 
-
-
-
+--------------------------------------------------------------------------
 from google.colab import files
 files.download("sso_baseline_result.csv")
 
-
-
-
+--------------------------------------------------------------------------
 # Output: UTC timestamp for a given M0 (e.g., 0°, 150°, etc.)
 
 from datetime import datetime, timedelta
